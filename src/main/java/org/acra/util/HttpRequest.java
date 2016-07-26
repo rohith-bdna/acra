@@ -109,14 +109,14 @@ public final class HttpRequest {
                 ACRA.log.e(LOG_TAG, "Could not configure SSL for ACRA request to " + url, e);
             }
         }
-
+/*
         // Set Credentials
         if (login != null && password != null) {
             final String credentials = login + ':' + password;
             final String encoded = new String(Base64.encode(credentials.getBytes(UTF8), Base64.NO_WRAP), UTF8);
             urlConnection.setRequestProperty("Authorization", "Basic " + encoded);
         }
-
+*/
         urlConnection.setConnectTimeout(connectionTimeOut);
         urlConnection.setReadTimeout(socketTimeOut);
 
