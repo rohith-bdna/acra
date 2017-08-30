@@ -94,7 +94,7 @@ public class HttpSender implements ReportSender {
             public String getContentType() {
                 return "application/json";
             }
-        };
+        },
         
         /**
          * Send data as a plain text.
