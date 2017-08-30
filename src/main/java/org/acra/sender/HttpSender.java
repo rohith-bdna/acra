@@ -95,6 +95,17 @@ public class HttpSender implements ReportSender {
                 return "application/json";
             }
         };
+        
+        /**
+         * Send data as a plain text.
+         */
+                PLAINTEXT {
+            @NonNull
+            @Override
+            public String getContentType() {
+                return "application/text";
+            }
+        };
 
         @NonNull
         public abstract String getContentType();
