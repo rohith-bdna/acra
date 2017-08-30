@@ -226,6 +226,9 @@ public class HttpSender implements ReportSender {
             case JSON:
                 reportAsString = report.toJSON().toString();
                 break;
+            case PLAINTEXT:
+                reportAsString = report.toJSON().toString();
+                break;
             case FORM:
             default:
                 final Map<String, String> finalReport = remap(report);
